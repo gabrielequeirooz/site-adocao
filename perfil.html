@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Perfil | Amigo de Pata</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+<header>
+    <h1>Amigo de Pata</h1>
+
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="animais.html">Animais</a>
+        <a href="#" onclick="sair()">Sair</a>
+    </nav>
+</header>
+
+<main class="container">
+
+    <h2>Vamos conhecer você!</h2>
+
+    <p>
+        Responda às perguntas para encontrarmos
+        seu companheiro ideal.
+    </p>
+
+    <form id="formPerfil" class="formulario">
+
+        <label>Qual é sua renda familiar mensal?</label>
+
+        <select id="renda" required>
+            <option value="">Selecione</option>
+            <option value="baixa">Até R$ 2.000</option>
+            <option value="media">De R$ 2.001 a R$ 5.000</option>
+            <option value="alta">Acima de R$ 5.000</option>
+        </select>
+
+        <label>Como é sua rotina?</label>
+
+        <select id="rotina" required>
+            <option value="">Selecione</option>
+            <option value="tranquila">Tranquila</option>
+            <option value="moderada">Moderada</option>
+            <option value="agitada">Agitada</option>
+        </select>
+
+        <label>Onde você mora?</label>
+
+        <select id="moradia" required>
+            <option value="">Selecione</option>
+            <option value="casa">Casa com quintal</option>
+            <option value="apartamento">Apartamento</option>
+            <option value="casa-pequena">Casa sem quintal</option>
+        </select>
+
+        <label>Quanto tempo tem disponível por dia?</label>
+
+        <select id="tempo" required>
+            <option value="">Selecione</option>
+            <option value="pouco">Até 2 horas</option>
+            <option value="medio">De 2 a 5 horas</option>
+            <option value="muito">Mais de 5 horas</option>
+        </select>
+
+        <label>Você já teve animais?</label>
+
+        <select id="experiencia" required>
+            <option value="">Selecione</option>
+            <option value="sim">Sim</option>
+            <option value="nao">Não</option>
+        </select>
+
+        <label>Qual animal você prefere?</label>
+
+        <select id="preferencia" required>
+            <option value="">Selecione</option>
+            <option value="cachorro">Cachorro</option>
+            <option value="gato">Gato</option>
+            <option value="qualquer">Não tenho preferência</option>
+        </select>
+
+        <button type="submit" class="botao">
+            Salvar meu perfil
+        </button>
+
+    </form>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
